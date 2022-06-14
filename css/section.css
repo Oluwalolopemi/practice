@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-section {
+    width: 40%;
+    background: url(../img/beautiful.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.form-section {
+    width: 60%;
+    background: #FFEDDA;
+    height: 100vh;
+    padding: 40px;
+    
+}
+
+/* .inner-formbox{
+border: 1px solid blueviolet;
+} */
+
+.page-holder {
+    display: flex;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-row input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #FFCCD3;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .input-box {
+    width: 48%;
+}
+
+.form-row .input-box1 {
+    width: 99%;
+}
+
+.submit input[type="submit"] {
+    padding: 14px 52px;
+    font-size: 14px;
+    background: #FFB830;
+    color: #FBF5FE;
+    border: 1px solid #FFB830;
+    border-radius: 3px 12px;
+    cursor: pointer;
+}
+
+.form-row select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #FFCCD3;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
+}

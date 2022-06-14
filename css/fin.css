@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section ul{
+    list-style: none;
+    display: flex;
+}
+
+.road-assistance {
+    display: flex;
+    padding-left: 20px;
+}
+
+.right-section ul li {
+    margin-right: 20px;
+}
+
+.right-section ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.right-section .navigation {
+    border-right: 2px solid #c4c4c4;
+}
+
+.road-assistance .icon {
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+#hero-section .text-section {
+    width: 45%;
+}
+
+#hero-section .image-section {
+    width: 55%;
+}
+
+#hero-section, #quote-section, #clear-section, #offer-section {
+    padding: 80px 0;
+}
+
+#hero-section .image-section {
+    background-image: url(../img/Header-Image.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 65vh;
+}
+
+.text-section h1{
+    font-size: 64px;
+}
+
+.orange-btn {
+    background: #ff6433;
+    border-radius: 12px;
+    padding: 16px 40px;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 18px;
+    margin-top: 35px;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+
+.time-section {
+    margin-top: 30px;
+    align-items: center;
+}
+
+.time-section .image-box {
+    width: 5%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.time-section .time-text {
+    width: 95%;
+}
+
+.time-section img {
+    width: 100%;
+}
+
+.light-grey {
+    color: #919191;
+}
+
+#quote-section {
+    background: #e2e6e9;
+}
+
+#quote-section .left-section, #quote-section .right-form-section {
+    width: 55%;
+    justify-content: space-between;
+}
+
+#quote-section ul, #clear-section ul {
+    list-style: none;
+}
+
+#quote-section ul li, #clear-section ul li {
+    margin-bottom: 20px;
+}
+
+#quote-section .left-section h2 {
+    margin-bottom: 30px;
+    font-size: 58px;
+}
+
+#quote-section .left-section .image-box {
+    width: 5%;
+    margin-right: 10px;
+}
+
+#quote-section .left-section .image-box img {
+    width: 100%;
+}
+
+#quote-section .left-section .text-box {
+    width: 50%;
+}
+
+#quote-section .left-section .text-box h5 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#quote-section .right-form-section h3 {
+    font-size: 48px;
+}
+
+#quote-section .right-form-section input {
+    width: 100%;
+    padding: 10px;
+}
+
+#clear-section .learn-left{
+    width: 45%;
+}
+
+#clear-section .learn-right{
+    width: 55%;
+}
+
+#clear-section .learn-left h3{
+    margin-bottom: 30px;
+    font-size: 58px;
+}
+
+#clear-section .learn-left .learn-text {
+    font-size: 16px;
+    width: 75%;
+}
+
+#clear-section .learn-right .learn-textbox h5 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#clear-section .learn-right .image-box {
+    width: 20%;
+    margin-left: 100px;
+}
+
+#clear-section .learn-right .learn-textbox p {
+    font-size: 16px;
+    width: 55%;
+}
+
+#offer-section {
+    background: #f2f2f2;
+}
+
+#offer-section .offer-text-section {
+    text-align: center;
+}
+
+#offer-section .offer-text-section h5 {
+    font-size: 58px;
+}
+
+#offer-section .offer-text-section p {
+    font-size: 24px;
+}
