@@ -122,6 +122,10 @@
     justify-content: space-between;
 }
 
+#quote-section .right-form-section .input-box{
+margin-top: 10px;
+}
+
 #quote-section ul, #clear-section ul {
     list-style: none;
 }
@@ -158,26 +162,26 @@
 }
 
 #quote-section .right-form-section input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
 }
 
 #clear-section .learn-left{
-    width: 45%;
+    width: 50%;
 }
 
 #clear-section .learn-right{
-    width: 55%;
+    width: 45%;
 }
 
-#clear-section .learn-left h3{
+#clear-section .learn-left h2 {
     margin-bottom: 30px;
     font-size: 58px;
 }
 
 #clear-section .learn-left .learn-text {
     font-size: 16px;
-    width: 75%;
+    width: 70%;
 }
 
 #clear-section .learn-right .learn-textbox h5 {
@@ -187,8 +191,8 @@
 }
 
 #clear-section .learn-right .image-box {
-    width: 20%;
-    margin-left: 100px;
+    width: 30%;
+    margin-left: 65px;
 }
 
 #clear-section .learn-right .learn-textbox p {
@@ -196,18 +200,297 @@
     width: 55%;
 }
 
-#offer-section {
-    background: #f2f2f2;
+.justify-between {
+    justify-content: space-between;
 }
 
-#offer-section .offer-text-section {
+#offer-section {
+    background: #f2f2f2;
+    min-height: 100vh;
+}
+
+#offer-section h2, #offer-section h5 {
     text-align: center;
 }
 
-#offer-section .offer-text-section h5 {
-    font-size: 58px;
+#offer-section .offer .offer-box{
+    background: #fff;
+    height: 232px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 24%;
+    margin-bottom: 12px;
 }
 
-#offer-section .offer-text-section p {
+#offer-section .offer {
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+#offer-section .offer .offer-box:hover {
+    background-color: #ff6433;
+    color: #fff;
+}
+
+.learn-arrow a{
+    display: flex;
+    color: #1E1B1B;
+    text-decoration: none;
+}
+
+.learn-arrow {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.learn-arrow a p {
+    margin-right: 10px;
+}
+
+#tools-section {
+    height: 500px;
+    display: flex;
+}
+
+#tools-section .car-section {
+    width: 20%;
+    height: 500px;
+    background: url(../img/volvo.png) no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+#tools-section .orange-section {
+    width: 40%;
+    background: #ff6433;
+    height: 500px;
+}
+
+#tools-section .auto-section {
+    width: 40%;
+    height: 500px;
+    background: url(../img/engine.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#testimony-section {
+    min-height: 100vh;
+    padding: 80px 0;
+}
+
+#testimony-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#testimony-section .testimony-slider {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#testimony-section .testimony-slide {
+    width: 48%;
+    background: #fff;
+    border: 1px solid rgba(172, 172, 172, 0.29);
+    padding: 30px;
+    box-shadow: 11px 130px 100px 30px rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+}
+
+#testimony-section .person-info {
+    display: flex;
+}
+
+#faq-section {
+    background: #e2e6e9;
+    min-height: 100vh;
+    padding: 80px 0;
+}
+
+#faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#faq-section .faq-main-box {
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#faq-section .faq-main-box .faq-box {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+#faq-section .faq-main-box .faq-control {
+    background: #ff6433;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 900;
+}
+
+.faq-box .header-section h4 {
+    font-weight: 600;
     font-size: 24px;
+}
+
+.faq-box .header-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-box .answer-section {
+    padding-top: 10px;
+}
+
+.faq-box .answer-section .answer-box {
+    width: 80%;
+}
+
+
+/* Mobile view */
+@media (max-width: 426px) {
+    .main-header {
+       flex-direction: column;
+       align-items: flex-start;
+    }
+
+    .right-section {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        display: none;
+     }
+
+    .right-section .navigation ul {
+        flex-direction: column;
+     }
+
+     .right-section .navigation {
+        border: none;
+     }
+
+     .right-section ul li {
+        padding: 10px 0;
+        margin-right: 0;
+     }
+
+     .road-assistance {
+        padding: 10px 0;
+    }
+
+    .flex-sm-column {
+        flex-direction: column;
+    }
+
+    #hero-section .text-section, #hero-section .image-section {
+        width: 100%;
+    }
+
+    #hero-section .text-section{
+        order: 2;
+    }
+
+    #hero-section .image-section{
+        order: 1;
+    }
+
+    .text-section h1 {
+        font-size: 35px;
+    }
+
+    #quote-section .left-section, #quote-section .right-form-section{
+        width: 100%;
+    }
+
+    #quote-section .left-section .image-box {
+        width: 10%;
+    }
+    
+    #quote-section .left-section .text-box {
+        width: 80%;
+    }
+    
+    #quote-section .left-section h2, #quote-section .right-form-section h3 {
+        font-size: 35px;
+    }
+    
+    #quote-section .left-section {
+        margin-bottom: 40px;
+    }
+
+    #clear-section .learn-left, #clear-section .learn-right {
+        width: 100%;
+    }
+
+    #clear-section .learn-left h2 {
+        font-size: 35px;
+    }
+
+    #clear-section .learn-left .learn-text {
+        width: 100%;
+    }
+    #clear-section .learn-left {
+        margin-bottom: 20%;
+    }
+
+    #offer-section .offer .offer-box {
+        width: 100%;
+    }
+
+    #tools-section{
+        flex-direction: column;
+    }
+
+    #tools-section .car-section, #tools-section .orange-section, #tools-section .auto-section {
+        width: 100%;
+    }
+}
+
+    /* Tablet view */
+@media (max-width: 769px) {
+    .container {
+        width: 90%;
+    }
+
+    .road-assistance {
+        display: none;
+    }
+
+    .text-section h1, #quote-section .left-section h2, #quote-section .right-form-section h3,
+    #clear-section .learn-left h2 {
+        font-size: 35px;
+    }
+
+    #quote-section .left-section .image-box {
+        width: 15%;
+    }
+
+    #quote-section .left-section .text-box {
+        width: 70%;
+    }
+
+    #clear-section .learn-right {
+        width: 70%;
+    }
+
+    #clear-section .learn-right .image-box {
+        width: 45%;
+    }
+
+    #clear-section .learn-text p, #clear-section .learn-right .learn-textbox p {
+        width: 100%;
+    }
 }
